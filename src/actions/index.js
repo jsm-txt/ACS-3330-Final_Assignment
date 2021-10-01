@@ -1,26 +1,19 @@
-export const INCREMENT = 'INCREMENT'
-
-export const increment = () => {
-	return {
-		type: INCREMENT
-	}
-}
-
 export const LOADWEATHER = 'LOADWEATHER'
 
-export const loadWeather = (zip) => {
+export const loadWeather = (lat, long) => {
 	return async (dispatch) => {
-		console.log('Function called')
-		const apikey = process.env.REACT_APP_APIKEY
-		const unit = 'metric'
-		const path = `https://api.openweathermap.org/data/2.5/weather?units=${unit}&zip=${zip}&appid=${apikey}`
-		console.log(path)
+		
+	
+	  const apikey = process.env.REACT_APP_APIKEY
+		const unit = 'imperial'
+		const path = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${apikey}&units=${unit}`
 		const res = await fetch(path)
 		const json = await res.json()
-
+		console.log("From action")
+		console.log(json)
 		const cod = json.cod
 		const message = json.message
-		if (cod !== 200) {
+		if (cod !== undefined) {
 
 			dispatch({
 				type:LOADWEATHER,
@@ -29,7 +22,6 @@ export const loadWeather = (zip) => {
 			return
 		}
 
-		console.log(json)
 		dispatch({
 			type: LOADWEATHER,
 			payload: {...json}

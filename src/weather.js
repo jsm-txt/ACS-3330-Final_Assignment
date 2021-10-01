@@ -6,24 +6,24 @@ import { useSelector, useDispatch } from 'react-redux'
 
 
 function Weather() {
-  const weather = useSelector(state => state.Weather)
+  const weather = useSelector(state => state.weather)
+  
   console.log(weather)
   const dispatch = useDispatch()
-  const [lat, setLat] = 0
-  const [long, setLong] = 0
+  const [lat, setLat] = useState('')
+  const [long, setLong] = useState('')
 
   
-
   return (
     <div className="weather-form">
       <form onSubmit={e => {
         e.preventDefault();
-        dispatch(loadWeather(53083))
+        dispatch(loadWeather(lat, long))
       }}>
         <input type="text" value={lat}
           onChange={e => setLat(e.target.value)} />
         <input type="text" value={long}
-                        onChange={e => setLong(e.target.value)} />
+          onChange={e => setLong(e.target.value)} />
         <button>
           submit
         </button>
