@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import counterReducer from './counterReducer'
+import weatherReducer from './weatherReducer'
 
 export default combineReducers({
-	count: counterReducer
+	weather: weatherReducer
 })
