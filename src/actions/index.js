@@ -10,7 +10,7 @@ export const loadWeather = (lat, long) => {
 		const res = await fetch(path)
 		const json = await res.json()
 		console.log("From action")
-		console.log(json)
+		
 		const cod = json.cod
 		const message = json.message
 		if (cod !== undefined) {

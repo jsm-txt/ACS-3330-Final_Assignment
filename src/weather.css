@@ -1,0 +1,15 @@
+.weather-form{
+  background-color: #ABCED9;
+  padding: 15px;
+}
+
+form button{
+  background-color: #cc9adc;
+  border: none;
+  border-radius:0;
+}
+
+form input{
+  max-width: 200px;
+  max-height: 1em;
+}
