@@ -1,10 +1,17 @@
 .weather-form{
-  background-color: #ABCED9;
+  background-color: #576A85;
   padding: 15px;
+  
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin:auto;
+  color:white;
+  
 }
 
 form button{
-  background-color: #cc9adc;
+  background-color: #9D68AF;
   border: none;
   border-radius:0;
 }
@@ -12,4 +19,27 @@ form button{
 form input{
   max-width: 200px;
   max-height: 1em;
+}
+
+button:hover{
+  background-color: #a47cb1;
+  color:white;
+  border: solid 2px;
+  border-color:#a47cb1 ;
+}
+
+.current-display{
+  background: #576A85;
+  color:white;
+}
+.day-bttn{
+height: 100px;
+background: #9D68AF;
+color:white;
+}
+.other-bttn{
+  height: 100px;
+background: #576A85;
+color:white;
+
 }

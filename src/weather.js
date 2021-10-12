@@ -25,30 +25,48 @@ function Weather() {
     //   const humidity = weather.current.humidity
     //   setCurrent({
     //     temp, wind_speed, feelsLike, humidity
-    //   })
-    // }
+  //   })
+  // }
 
   return (
-    <div>
-      <div className="weather-form">
+    <div className="contianer">
+      <div className="weather-form col-4">
 
         <form onSubmit={e => {
           e.preventDefault();
           dispatch(loadWeather(lat, long))
 
-        }}><label>Latitude:</label>
-          <input type="text" value={lat}
-            onChange={e => setLat(e.target.value)} /><br></br>
-          <label>Longitude:</label>
-          <input type="text" value={long}
-            onChange={e => setLong(e.target.value)} /><br></br>
+        }}>
+          <div class="mb-3">
+            <label>Latitude:</label><br></br>
+            <input type="text" value={lat}
+              onChange={e => setLat(e.target.value)} />
+          </div>
+          <div class="mb-3">
+            <label>Longitude:</label><br></br>
+            <input type="text" value={long}
+              onChange={e => setLong(e.target.value)} />
+          </div>
           <button>
-            submit
+            Submit
           </button>
         </form>
 
       </div>
-      {weather && <CurrentWeatherDisplay {...weather.current} />}
+      <div className="page-one container-fluid m-3 p-0">
+        <div className="row">
+        {weather && <CurrentWeatherDisplay {...weather.current} />}
+        <div className="car-info col-6"><div className="row">
+          <div className="day-bttn col-6"> 7 day forecast</div>
+          <div className="other-bttn col-6"> 2 day hourly forecast</div>
+        </div>
+          <div className="row">
+            <div className="other-bttn col-6"> Minutely forecast</div>
+            <div className="day-bttn col-6"> show previous 5 days</div>
+          </div>
+        </div>
+      </div></div>
+
       {weather && <DailyWeatherDisplay {...weather.daily} />}
       {weather && <HourlyWeatherDisplay {...weather.hourly} />}
       {weather && <MinutelyWeatherDisplay {...weather.minutely} />}
