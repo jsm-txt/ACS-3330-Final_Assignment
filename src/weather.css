@@ -72,5 +72,8 @@ display: flex;
 .other-bttn:hover{
   background-color: #869ebf;
   color:white;
-  
+}
+
+.daily-card{
+  background: aqua;
 }

@@ -71,8 +71,11 @@ function Weather() {
           </div>
         </div>
       </div>
+      <div className=" container-fluid">
+        {weather && <DailyWeatherDisplay {...weather.daily} />}
+      </div>
 
-      {weather && <DailyWeatherDisplay {...weather.daily} />}
+      
       {weather && <HourlyWeatherDisplay {...weather.hourly} />}
       {weather && <MinutelyWeatherDisplay {...weather.minutely} />}
     </div>
