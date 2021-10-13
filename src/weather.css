@@ -2,7 +2,7 @@
   background-color: #576A85;
   padding: 15px;
   
-  height: 200px;
+  
   display: flex;
   justify-content: center;
   margin:auto;
@@ -24,22 +24,53 @@ form input{
 button:hover{
   background-color: #a47cb1;
   color:white;
-  border: solid 2px;
-  border-color:#a47cb1 ;
+  /* border: solid 2px; */
+  border-color:#b58cc2;
+}
+/*--------------------------------*/
+.page-one{
+  min-height: 300px;
 }
 
 .current-display{
   background: #576A85;
   color:white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .day-bttn{
-height: 100px;
 background: #9D68AF;
 color:white;
+text-align: center;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
+.day-bttn:hover{
+  background-color: #b58cc2;
+  color:white;
+  
+} 
+
 .other-bttn{
-  height: 100px;
 background: #576A85;
 color:white;
+text-align: center;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.other-bttn:hover{
+  background-color: #869ebf;
+  color:white;
+  
 }

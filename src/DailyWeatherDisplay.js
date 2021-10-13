@@ -13,8 +13,6 @@ function DailyWeatherDisplay(props){
     )
   }
 
-
-
   return(
     <div>
       7 day week

@@ -1,13 +1,14 @@
-
 function CurrentWeatherDisplay(props){
     const { temp, wind_speed, feels_like, humidity} = props
 
     return(
-        <div className="current-display col-6">
-            <h2>  {temp}°F</h2>
-            <small>Feels like: {feels_like}°F</small><br></br>
-            <small>Wind speed: {wind_speed} mph</small><br></br>
-            <small>Humidity: {humidity}</small><br></br>
+        <div className="current-display col-5">
+            <h1>  {temp}°F</h1>
+            <div className="text">
+                <small>Feels like: {feels_like}°F</small>
+                <small>Wind speed: {wind_speed} mph</small>
+                <small>Humidity: {humidity}</small>
+            </div>
 
         </div>
     )

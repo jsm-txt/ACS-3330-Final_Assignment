@@ -9,7 +9,6 @@ export const loadWeather = (lat, long) => {
 		const path = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${apikey}&units=${unit}`
 		const res = await fetch(path)
 		const json = await res.json()
-		console.log("From action")
 		
 		const cod = json.cod
 		const message = json.message

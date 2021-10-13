@@ -29,14 +29,14 @@ function Weather() {
   // }
 
   return (
-    <div className="contianer">
+    <div className="contianer-fluid">
       <div className="weather-form col-4">
 
         <form onSubmit={e => {
           e.preventDefault();
           dispatch(loadWeather(lat, long))
 
-        }}>
+        }}><heading>Enter your coordinates here!</heading>
           <div class="mb-3">
             <label>Latitude:</label><br></br>
             <input type="text" value={lat}
@@ -51,21 +51,26 @@ function Weather() {
             Submit
           </button>
         </form>
-
       </div>
-      <div className="page-one container-fluid m-3 p-0">
-        <div className="row">
-        {weather && <CurrentWeatherDisplay {...weather.current} />}
-        <div className="car-info col-6"><div className="row">
-          <div className="day-bttn col-6"> 7 day forecast</div>
-          <div className="other-bttn col-6"> 2 day hourly forecast</div>
-        </div>
-          <div className="row">
-            <div className="other-bttn col-6"> Minutely forecast</div>
-            <div className="day-bttn col-6"> show previous 5 days</div>
+
+      <div className=" container-fluid  p-0">
+        <div className="page-one row p-3 justify-content-evenly">
+          
+            {weather && <CurrentWeatherDisplay {...weather.current} />}
+          
+          
+          <div className="card-info  col-5">
+            <div className="row h-50 pb-3 justify-content-evenly">
+              <div className="day-bttn col-5"> 7 day forecast</div>
+              <div className="other-bttn col-5"> 2 day hourly forecast</div>
+            </div>
+            <div className="row h-50 pt-3 justify-content-evenly">
+              <div className="other-bttn col-5"> Minutely forecast</div>
+              <div className="day-bttn col-5"> show previous 5 days</div>
+            </div>
           </div>
         </div>
-      </div></div>
+      </div>
 
       {weather && <DailyWeatherDisplay {...weather.daily} />}
       {weather && <HourlyWeatherDisplay {...weather.hourly} />}
