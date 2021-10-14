@@ -1,7 +1,7 @@
 function MinutelyWeatherDisplay(props){
   const minutes = props
   const minute = [];
-  console.log(minutes)
+  
 
   for ( let x in minutes){
     

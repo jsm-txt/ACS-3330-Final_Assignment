@@ -66,14 +66,14 @@ function Weather() {
             </div>
             <div className="row h-50 pt-3 justify-content-evenly">
               <div className="other-bttn col-5"> Minutely forecast</div>
-              <div className="day-bttn col-5"> show previous 5 days</div>
+              <div className="day-bttn col-5"> Previous 5 days</div>
             </div>
           </div>
         </div>
       </div>
-      <div className=" container-fluid">
+      
         {weather && <DailyWeatherDisplay {...weather.daily} />}
-      </div>
+      
 
       
       {weather && <HourlyWeatherDisplay {...weather.hourly} />}

@@ -75,5 +75,34 @@ display: flex;
 }
 
 .daily-card{
-  background: aqua;
+  background: #9D68AF;
+color:white;
+text-align: center;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.daily-card2{
+  background: #576A85;
+color:white;
+text-align: center;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 250px;
+}
+
+.daily-content{
+
+  color:white;
+text-align: center;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title{
+  background:#576A85 ;
+  color:white;
 }
