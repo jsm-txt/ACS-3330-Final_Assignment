@@ -72,10 +72,7 @@ function Weather() {
         </div>
       </div>
       
-      {weather && <DailyWeatherDisplay {...weather.daily} />}
-      
-
-      
+      {weather && <DailyWeatherDisplay {...weather.daily} />} 
       {weather && <HourlyWeatherDisplay {...weather.hourly} />}
       {weather && <MinutelyWeatherDisplay {...weather.minutely} />}
     </div>

@@ -37,7 +37,7 @@ function DailyWeatherDisplay(props){
   }
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid p-4 ">
       <div className="title col-4 p-3 m-auto">
         <h3> 48 Hour</h3>
       </div>
