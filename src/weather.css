@@ -1,13 +1,15 @@
 .weather-form{
   background-color: #576A85;
   padding: 15px;
-  
-  
+  height: 260px;
   display: flex;
   justify-content: center;
   margin:auto;
   color:white;
   
+}
+.form-title{
+  font-weight: bold;
 }
 
 form button{
@@ -19,7 +21,7 @@ form button{
 
 form input{
   max-width: 200px;
-  max-height: 1em;
+  min-height: 1.5em;
 }
 
 button:hover{
@@ -27,6 +29,7 @@ button:hover{
   color:white;
   /* border: solid 2px; */
   border-color:#b58cc2;
+  border: 2px solid;
 }
 /*--------------------------------*/
 .page-one{
@@ -110,20 +113,21 @@ display: flex;
 /* --------------------- */
 
 .hour-row{
+  background: #6C8FBB;
+  color:white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hour-row2{  
   background: #9D68AF;
   color:white;
   text-align: center;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hour-row2{  background: #6C8FBB;
-  color:white;
-  text-align: center;
-  display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .hourly{
   font-weight:bold;
@@ -135,4 +139,21 @@ hr {
   margin-right: 30px;
   margin-left:30px;
   background-image: linear-gradient(to right, rgb(255, 247, 247), rgb(0, 238, 223), rgb(255, 255, 255));
+}
+/* ----------------------- */
+
+.minute-display{
+  background:#9D68AF ;
+  color:white;
+  
+}
+
+.minute-display2{
+  background: #6C8FBB;
+  color:white;
+}
+.time > p {
+  font-size: small;
+  margin: none;
+  padding: none;
 }

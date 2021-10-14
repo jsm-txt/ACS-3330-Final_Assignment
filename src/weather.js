@@ -7,6 +7,9 @@ import DailyWeatherDisplay from './DailyWeatherDisplay';
 import HourlyWeatherDisplay from './HourlyWeatherDisplay';
 import MinutelyWeatherDisplay from './MinetelyWeatherDisplay';
 
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 
 function Weather() {
@@ -36,7 +39,7 @@ function Weather() {
           e.preventDefault();
           dispatch(loadWeather(lat, long))
 
-        }}><heading>Enter your coordinates here!</heading>
+        }}><heading className="form-title">Enter your coordinates here!</heading>
           <div class="mb-3">
             <label>Latitude:</label><br></br>
             <input type="text" value={lat}
@@ -61,7 +64,8 @@ function Weather() {
           
           <div className="card-info  col-5">
             <div className="row h-50 pb-3 justify-content-evenly">
-              <div className="day-bttn col-5"> 7 day forecast</div>
+              
+              <div className="day-bttn col-5" href="#Daily-weather">7 day Forecast</div>
               <div className="other-bttn col-5"> 2 day hourly forecast</div>
             </div>
             <div className="row h-50 pt-3 justify-content-evenly">
