@@ -53,8 +53,8 @@ function Weather() {
         </form>
       </div>
 
-      <div className=" container-fluid  p-0">
-        <div className="page-one row p-3 justify-content-evenly">
+      <div className=" container-fluid m-0 p-0">
+        <div className="page-one row pt-4 pb-4 justify-content-evenly">
           
             {weather && <CurrentWeatherDisplay {...weather.current} />}
           
@@ -72,7 +72,7 @@ function Weather() {
         </div>
       </div>
       
-        {weather && <DailyWeatherDisplay {...weather.daily} />}
+      {weather && <DailyWeatherDisplay {...weather.daily} />}
       
 
       

@@ -13,6 +13,7 @@
 form button{
   background-color: #9D68AF;
   border: none;
+  color:white;
   border-radius:0;
 }
 
@@ -105,4 +106,28 @@ display: flex;
 .title{
   background:#576A85 ;
   color:white;
+}
+/* --------------------- */
+
+.hour-row{
+  background: #9D68AF;
+  color:white;
+  text-align: center;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hour-row2{  background: #6C8FBB;
+  color:white;
+  text-align: center;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+hr {
+  border: solid 1px;
+  height: 1px;
+
+  background-image: linear-gradient(to right, rgb(255, 247, 247), rgb(0, 238, 223), rgb(255, 255, 255));
 }

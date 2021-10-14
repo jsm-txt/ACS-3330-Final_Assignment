@@ -24,6 +24,7 @@ function DailyWeatherDisplay(props) {
                 <small>Max {days[x].temp.max}°F</small>
                 <small>Min {days[x].temp.min}°F</small>
                 <small>Humidity: {days[x].humidity}</small>
+                
               </div>
             </div>
           )
@@ -36,6 +37,7 @@ function DailyWeatherDisplay(props) {
                 <small>Max {days[x].temp.max}°F</small>
                 <small>Min {days[x].temp.min}°F</small>
                 <small>Humidity: {days[x].humidity}</small>
+                
               </div>
             </div>
           )
@@ -50,6 +52,7 @@ function DailyWeatherDisplay(props) {
                 <small>Max {days[x].temp.max}°F</small>
                 <small>Min {days[x].temp.min}°F</small>
                 <small>Humidity: {days[x].humidity}</small>
+                
               </div>
             </div>
           )
@@ -69,19 +72,19 @@ function DailyWeatherDisplay(props) {
     }
   }
 
-    return (
-      <div className="container-fluid p-4">
-        <div className="title col-4 p-3 m-auto">
-          <h3> 7 Day Week</h3>
-        </div>
-
-        <div className="row pb-3 pt-3 justify-content-evenly">
-          {week_row}
-        </div>
-        <div className="row pt-3 pb-3 justify-content-evenly">
-          {week_row2}
-        </div>
+  return (
+    <div className="container-fluid p-4">
+      <div className="title col-4 p-3 m-auto">
+        <h3> 7 Day Week</h3>
       </div>
-    )
-  }
+
+      <div className="row pb-3 pt-4 justify-content-evenly">
+        {week_row}
+      </div>
+      <div className="row pt-3 pb-3 justify-content-evenly">
+        {week_row2}
+      </div>
+    </div>
+  )
+}
 export default DailyWeatherDisplay
