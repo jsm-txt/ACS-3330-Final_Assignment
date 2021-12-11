@@ -31,6 +31,7 @@ button:hover{
   border-color:#b58cc2;
   border: 2px solid;
 }
+
 /*--------------------------------*/
 .page-one{
   min-height: 300px;
@@ -110,6 +111,7 @@ display: flex;
   background:#576A85 ;
   color:white;
 }
+
 /* --------------------- */
 
 .hour-row{
@@ -140,6 +142,7 @@ hr {
   margin-left:30px;
   background-image: linear-gradient(to right, rgb(255, 247, 247), rgb(0, 238, 223), rgb(255, 255, 255));
 }
+
 /* ----------------------- */
 
 .minute-display{
@@ -157,3 +160,5 @@ hr {
   margin: none;
   padding: none;
 }
+
+/* -------------------------------*/
