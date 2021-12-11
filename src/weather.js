@@ -134,7 +134,7 @@ function Weather() {
         {/* {loadData} */}
         {/* <BarChart data = {data} /> */}
         {weather.daily && <HourlyWeatherDisplay {...weather.hourly} />}
-        {weather.daily && <MinutelyWeatherDisplay {...weather.minutely} />}
+        {weather.minutely && <MinutelyWeatherDisplay {...weather.minutely} />}
       </div>
     );
   }

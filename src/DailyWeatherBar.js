@@ -45,7 +45,54 @@ function BarChart(props) {
 		
 		const bottomAxis = d3.axisBottom(xscale)
 	 	const leftAxis = d3.axisLeft(yscale)
+		//---------------------------------------------
 
+		//  const graphArea = svg
+		//  .append('g')
+		//  .attr('transform', `translate(${margin.left}, ${margin.top})`);
+		 const defs = svg.append('defs');
+
+		 const bgGradient = defs
+			 .append('linearGradient')
+			 .attr('id', 'bg-gradient')
+			 // .attr('x1', '0')
+			 // .attr('y1', '0')
+			 // .attr('x2', '0')
+			 // .attr('y2', '1')
+			 .attr('gradientTransform', 'rotate(90)');
+	 
+		 bgGradient
+			 .append('stop')
+			 .attr('stop-color', 'tomato')
+			 .attr('offset', '0%');
+		 bgGradient
+			 .append('stop')
+			 .attr('stop-color', 'blue')
+			 .attr('offset', '100%');
+	 
+		//  const clipPath = graphArea
+		// 	 .append('g')
+		// 	 .attr('clip-path', `url(#clip-bar-rects)`);
+	 
+		//  clipPath
+		// 	 .append('rect')
+		// 	 .attr('x', 0)
+		// 	 .attr('y', 0)
+		// 	 .attr('width', width)
+		// 	 .attr('height', height)
+			//  .style('fill', 'url(#bg-gradient)');
+		// 	 const ax = graphArea
+    // .append('g')
+    // .attr('class', 'axis')
+    // .attr('transform', `translate(0, ${height})`)
+    
+
+  // graphArea
+  //   .append('g')
+  //   .attr('class', 'axis')
+   
+
+//------------------------------------------------
 		svg
 			.select('.x-axis')
 			.attr('transform', `translate(0, ${height - margin.bottom})`)
@@ -72,8 +119,8 @@ function BarChart(props) {
 			.attr('width', xscale.bandwidth())
 			.attr('y', d => yscale(d.temp.day))
 			.attr('height',d => yscale(-30) - yscale(d.temp.day))
-			.attr('fill', 'red')
-	
+			.style('fill', 'url(#bg-gradient)');
+
 	}, [days.length])
 	
   return (
