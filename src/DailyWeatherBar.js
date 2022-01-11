@@ -63,11 +63,11 @@ function BarChart(props) {
 	 
 		 bgGradient
 			 .append('stop')
-			 .attr('stop-color', 'tomato')
+			 .attr('stop-color', 'red')
 			 .attr('offset', '0%');
 		 bgGradient
 			 .append('stop')
-			 .attr('stop-color', 'blue')
+			 .attr('stop-color', 'skyblue')
 			 .attr('offset', '100%');
 	 
 		//  const clipPath = graphArea
