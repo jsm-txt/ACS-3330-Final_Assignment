@@ -37,7 +37,7 @@ function Weather() {
     const cod = json.cod
     const message =json.message
     if (cod!== 200){  
-        setData({cod, message})
+        // setData({cod, message})
             return
         
     }

@@ -20,7 +20,7 @@ function DailyWeatherDisplay(props) {
             <div className="daily-card col-2">
               <h3> {date} </h3>
               <div className="daily-content">
-                <h4> {days[x].temp.day}°F</h4>
+                <h5> {days[x].temp.day}°F</h5>
                 <small>Max {days[x].temp.max}°F</small>
                 <small>Min {days[x].temp.min}°F</small>
                 <small>Humidity: {days[x].humidity}</small>
@@ -31,9 +31,9 @@ function DailyWeatherDisplay(props) {
         } else {
           week_row.push(
             <div className="daily-card2 col-2">
-              <h2> {date} </h2>
+              <h3> {date} </h3>
               <div className="daily-content">
-                <h4> {days[x].temp.day}°F</h4>
+                <h5> {days[x].temp.day}°F</h5>
                 <small>Max {days[x].temp.max}°F</small>
                 <small>Min {days[x].temp.min}°F</small>
                 <small>Humidity: {days[x].humidity}</small>
@@ -48,7 +48,7 @@ function DailyWeatherDisplay(props) {
             <div className="daily-card col-2">
               <h3> {date} </h3>
               <div className="daily-content">
-                <h4> {days[x].temp.day}°F</h4>
+                <h5> {days[x].temp.day}°F</h5>
                 <small>Max {days[x].temp.max}°F</small>
                 <small>Min {days[x].temp.min}°F</small>
                 <small>Humidity: {days[x].humidity}</small>
@@ -61,7 +61,7 @@ function DailyWeatherDisplay(props) {
             <div className="daily-card2 col-2">
               <h3> {date} </h3>
               <div className="daily-content">
-                <h4> {days[x].temp.day}°F</h4>
+                <h5> {days[x].temp.day}°F</h5>
                 <small>Max {days[x].temp.max}°F</small>
                 <small>Min {days[x].temp.min}°F</small>
                 <small>Humidity: {days[x].humidity}</small>

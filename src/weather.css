@@ -1,5 +1,5 @@
 .weather-form{
-  background-color:#5558E0;
+  background-color:#2F8BF5;
   padding: 15px;
   height: 360px;
   /* display: flex;
@@ -97,7 +97,7 @@ text-align: center;
 display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 220px;
+  min-height: 190px;
 }
 
 .daily-content{
@@ -135,7 +135,7 @@ display: flex;
 }
 .hourly{
   font-weight:bold;
-  font-size: 1em;
+  font-size: .9em;
 }
 .hour-display p{
   font-size:.8em;
@@ -160,8 +160,8 @@ hr {
   background: #12a1ae;
   color:white;
 }
-.time > p {
-  font-size: small;
+.time {
+  font-size: .9em;
   margin: none;
   padding: none;
 }
