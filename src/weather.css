@@ -1,9 +1,9 @@
 .weather-form{
-  background-color: #576A85;
+  background-color:#5558E0;
   padding: 15px;
-  height: 260px;
-  display: flex;
-  justify-content: center;
+  height: 360px;
+  /* display: flex;
+  justify-content: center; */
   margin:auto;
   color:white;
   
@@ -13,8 +13,9 @@
 }
 
 form button{
-  background-color: #9D68AF;
-  border: none;
+  background-color: #BE5AFF;
+  border-color:#b58cc2;
+  border: 1px solid;
   color:white;
   border-radius:0;
 }
@@ -25,11 +26,11 @@ form input{
 }
 
 button:hover{
-  background-color: #a47cb1;
+  background-color: #cd86fc;
   color:white;
   /* border: solid 2px; */
   border-color:#b58cc2;
-  border: 2px solid;
+  border: 3px solid;
 }
 
 /*--------------------------------*/
@@ -38,12 +39,13 @@ button:hover{
 }
 
 .current-display{
-  background: #6C8FBB;
+  background: #2F8BF5;
   color:white;
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 300px;
+
 }
 .text{
   display: flex;
@@ -66,7 +68,7 @@ display: flex;
 } 
 
 .other-bttn{
-background: #6C8FBB;
+background: #19FAA1;
 color:white;
 text-align: center;
 display: flex;
@@ -75,12 +77,12 @@ display: flex;
 }
 
 .other-bttn:hover{
-  background-color: #869ebf;
+  background-color: #2AD1E0;
   color:white;
 }
 
 .daily-card{
-  background: #9D68AF;
+  background: #1eb377;
 color:white;
 text-align: center;
 display: flex;
@@ -89,13 +91,13 @@ display: flex;
 }
 
 .daily-card2{
-  background: #6C8FBB;
+  background: #12a1ae;
 color:white;
 text-align: center;
 display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 250px;
+  min-height: 220px;
 }
 
 .daily-content{
@@ -108,14 +110,14 @@ display: flex;
 }
 
 .title{
-  background:#576A85 ;
+  background:#5558E0;
   color:white;
 }
 
 /* --------------------- */
 
 .hour-row{
-  background: #6C8FBB;
+  background: #12a1ae;
   color:white;
   text-align: center;
   display: flex;
@@ -124,7 +126,7 @@ display: flex;
 }
 
 .hour-row2{  
-  background: #9D68AF;
+  background: #1eb377;
   color:white;
   text-align: center;
   display: flex;
@@ -133,7 +135,10 @@ display: flex;
 }
 .hourly{
   font-weight:bold;
-  font-size: 1.1em;
+  font-size: 1em;
+}
+.hour-display p{
+  font-size:.8em;
 }
 hr {
   border: solid 1px;
@@ -146,13 +151,13 @@ hr {
 /* ----------------------- */
 
 .minute-display{
-  background:#9D68AF ;
+  background:#1eb377 ;
   color:white;
   
 }
 
 .minute-display2{
-  background: #6C8FBB;
+  background: #12a1ae;
   color:white;
 }
 .time > p {
@@ -162,3 +167,32 @@ hr {
 }
 
 /* -------------------------------*/
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}

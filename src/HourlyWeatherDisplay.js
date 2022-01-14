@@ -16,7 +16,7 @@ function DailyWeatherDisplay(props){
     if (x < 24) {
       hourly_row.push(
         <div className="hour-display">
-          <div className="hourly"><p> {date} | {hours[x].temp}°F</p></div>
+          <div className="hourly"> {date} | {hours[x].temp}°F</div>
           <p>Feels like: {hours[x].feels_like}°F | 
           Wind Speed: {hours[x].wind_speed} mph | 
           Humidity: {hours[x].humidity}</p>
@@ -26,7 +26,7 @@ function DailyWeatherDisplay(props){
     } else {
       hourly_row2.push(
         <div className="hour-display">
-          <div className="hourly"><p> {date} | {hours[x].temp}°F</p></div>
+          <div className="hourly pb-0 mb-0"> {date} | {hours[x].temp}°F</div>
           <p>Feels like: {hours[x].feels_like}°F | 
           Wind Speed: {hours[x].wind_speed} mph | 
           Humidity: {hours[x].humidity}</p>

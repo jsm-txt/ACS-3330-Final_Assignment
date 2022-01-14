@@ -5,7 +5,7 @@
     display: inline-block;
     padding: 1em;
     margin-bottom: 2em;
-    background-color: #576A85;
+    background-color: #2F8BF5;
     color: #fff;
   }
   .Title .h1{
@@ -23,6 +23,6 @@
   .Title .nav-link-active {
     color: #fff;
     border: 2px solid;
-    background: #a47cb1;
+    background: #BE5AFF;
   }
   
