@@ -1,28 +1,36 @@
  /* src/Title.css  */
 .Title {
-    box-sizing: border-box;
-    width: 100%;
-    display: inline-block;
-    padding: 1em;
-    margin-bottom: 2em;
-    background-color: #2F8BF5;
-    color: #fff;
-  }
-  .Title .h1{
-    display: inline-block;
-  }
- 
-  .Title .nav-link {
-    display: inline-block;
-    padding: 0.5em 1em;
-    color: rgba(255, 255, 255, 0.65);
-    font-weight: bold;
-    text-decoration: none;
-  }
+  /* box-sizing: border-box; */
+  width: 100%;
+  display: inline-block;
+  padding: 1em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  /* text-align: justify; */
+  background-color: #2F8BF5;
+  color: #fff;
+}
 
-  .Title .nav-link-active {
-    color: #fff;
-    border: 2px solid;
-    background: #BE5AFF;
-  }
+.Title .h3{
+  text-align: left;
+}
+.Title .items{
+  text-align: right;
+}
+
+.Title .nav-link {
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Title .nav-link-active {
+  color: rgb(246, 246, 246);
+  /* border-bottom: 2px solid rgb(255, 255, 255); */
+  padding-bottom: 3px
+  /* border: 2px solid; */
+  /* background: #BE5AFF; */
+}
   

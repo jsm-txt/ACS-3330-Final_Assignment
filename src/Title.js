@@ -5,26 +5,23 @@ import './Title.css';
 
 function Title() {
     return (
-      <div className="Title">
-        
-        <header>
-        <h1 className="h1 p-4">Everything Weather</h1>  
-        <div>
-        <NavLink
+      <nav className="Title">
+        <div className="row">
+        <h4 className="col-6 h3">Everything Weather</h4>
+        <div className="col-6 items mr-0 ml-auto">
+          <NavLink
             className="nav-link"
             activeClassName="nav-link-active"
             exact
             to="/">Everything Weather</NavLink>
 
-        <NavLink
+          <NavLink
             className="nav-link"
             activeClassName="nav-link-active"
             to="/about">About</NavLink>
-
         </div>
-  
-        </header>
-      </div>
+        </div>
+      </nav>
     )
   }
 

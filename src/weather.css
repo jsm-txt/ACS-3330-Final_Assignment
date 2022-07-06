@@ -1,198 +1,227 @@
-.weather-form{
-  background-color:#2F8BF5;
-  padding: 15px;
-  height: 360px;
-  /* display: flex;
+/* Homepage CSS */
+.weather-form {
+    background-color: #2F8BF5;
+    padding: 15px;
+    height: 360px;
+    /* display: flex;
   justify-content: center; */
-  margin:auto;
-  color:white;
-  
-}
-.form-title{
-  font-weight: bold;
-}
-
-form button{
-  background-color: #BE5AFF;
-  border-color:#b58cc2;
-  border: 1px solid;
-  color:white;
-  border-radius:0;
-}
-
-form input{
-  max-width: 200px;
-  min-height: 1.5em;
-}
-
-button:hover{
-  background-color: #cd86fc;
-  color:white;
-  /* border: solid 2px; */
-  border-color:#b58cc2;
-  border: 3px solid;
-}
-
-/*--------------------------------*/
-.page-one{
-  min-height: 300px;
-}
-
-.current-display{
-  background: #2F8BF5;
-  color:white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 300px;
+    margin: auto;
+    color: white;
 
 }
-.text{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.day-bttn{
-background: #9D68AF;
-color:white;
-text-align: center;
-display: flex;
-  flex-direction: column;
-  justify-content: center;
 
+.form-title {
+    font-weight: bold;
 }
-.day-bttn:hover{
-  background-color: #b58cc2;
-  color:white;
-  
-} 
-
-.other-bttn{
-background: #19FAA1;
-color:white;
-text-align: center;
-display: flex;
-  flex-direction: column;
-  justify-content: center;
+.active{
+    background-color: #cd86fc;
+    color: white;
+    border-color: #b58cc2;
+    border: 3px solid;
 }
 
-.other-bttn:hover{
-  background-color: #2AD1E0;
-  color:white;
+form button {
+    background-color: #BE5AFF;
+    border-color: #b58cc2;
+    border: 1px solid;
+    color: white;
+    border-radius: 0;
 }
 
-.daily-card{
-  background: #1eb377;
-color:white;
-text-align: center;
-display: flex;
-  flex-direction: column;
-  justify-content: center;
+form input {
+    max-width: 200px;
+    min-height: 1.8em;
+}
+/* 
+button:hover {
+    background-color: #cd86fc;
+    color: white;
+    border-color: #b58cc2;
+    border: 3px solid;
+} */
+
+/*------- Call to action CSS--------*/
+.call-to-action-container {
+    background-color: #2F8BF5
 }
 
-.daily-card2{
-  background: #12a1ae;
-color:white;
-text-align: center;
-display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 190px;
+.call-to-action-heading {
+    border-bottom: 1.5px solid white;
+    padding-bottom: .3em;
 }
 
-.daily-content{
-
-  color:white;
-text-align: center;
-display: flex;
-  flex-direction: column;
-  justify-content: center;
+.call-to-action {
+    font-size: 1.2em;
+    color: white;
 }
 
-.title{
-  background:#5558E0;
-  color:white;
+/*------- Current Display CSS--------*/
+.page-one {
+    min-height: 300px;
 }
 
-/* --------------------- */
+.current-display {
+    background: #2F8BF5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
 
-.hour-row{
-  background: #12a1ae;
-  color:white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.hour-row2{  
-  background: #1eb377;
-  color:white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-.hourly{
-  font-weight:bold;
-  font-size: .9em;
+
+.day-bttn {
+    background: #9D68AF;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
-.hour-display p{
-  font-size:.8em;
+
+.day-bttn:hover {
+    background-color: #b58cc2;
+    color: white;
+
 }
+
+.other-bttn {
+    background: #19FAA1;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.other-bttn:hover {
+    background-color: #2AD1E0;
+    color: white;
+}
+
+.daily-card {
+    background: #1eb377;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.daily-card2 {
+    background: #12a1ae;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 190px;
+}
+
+.daily-content {
+
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    background: #5558E0;
+    color: white;
+}
+
+/*------- Hourly Display CSS--------*/
+
+.hour-row {
+    background: #12a1ae;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hour-row2 {
+    background: #1eb377;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hourly {
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.hour-display p {
+    font-size: .8em;
+}
+
 hr {
-  border: solid 1px;
-  height: 1px;
-  margin-right: 30px;
-  margin-left:30px;
-  background-image: linear-gradient(to right, rgb(255, 247, 247), rgb(0, 238, 223), rgb(255, 255, 255));
+    border: solid 1px;
+    height: 1px;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-image: linear-gradient(to right, rgb(255, 247, 247), rgb(0, 238, 223), rgb(255, 255, 255));
 }
 
-/* ----------------------- */
+/*------- Minutely Display CSS--------*/
 
-.minute-display{
-  background:#1eb377 ;
-  color:white;
-  
+.minute-display {
+    background: #1eb377;
+    color: white;
+
 }
 
-.minute-display2{
-  background: #12a1ae;
-  color:white;
+.minute-display2 {
+    background: #12a1ae;
+    color: white;
 }
+
 .time {
-  font-size: .9em;
-  margin: none;
-  padding: none;
+    font-size: .9em;
+    margin: none;
+    padding: none;
 }
 
-/* -------------------------------*/
+/*------- Bar Graph Display CSS--------*/
 
 .d3-tip {
-  line-height: 1;
-  font-weight: bold;
-  padding: 12px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  border-radius: 2px;
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
 }
 
 /* Creates a small triangle extender for the tooltip */
 .d3-tip:after {
-  box-sizing: border-box;
-  display: inline;
-  font-size: 10px;
-  width: 100%;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
-  content: "\25BC";
-  position: absolute;
-  text-align: center;
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
 }
 
 /* Style northward tooltips differently */
 .d3-tip.n:after {
-  margin: -1px 0 0 0;
-  top: 100%;
-  left: 0;
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
 }
