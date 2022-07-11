@@ -77,63 +77,46 @@ function Weather() {
     // console.log('Display')
 
     return (
-        <div className="contianer-fluid">
-            <div className="row">
+        <div className="contianer-fluid p-0 m-0">
+            <div className="row m-0">
                 {/* {data && <CurrentWeatherDisplay {...data} />} */}
                 {data ? <CurrentWeatherDisplay {...data} /> : <CallToAction/>}
-                {/* {formToggle ? <button 
-                        onClick={e => {
-                        e.preventDefault();
-                        setFormToggle(false);
-                        console.log("on")
-                    }}> toggle on </button> : 
-                    <button
-                        onClick={e => {
-                        e.preventDefault();
-                        setFormToggle(true);
-                        console.log("off")
-                    }}
-                    > toggle off </button>} */}
                 <div className="weather-form col-4">
-                    <button key={1} id={"1"} className={active === "1" ? "active" : undefined}
+                    <button key={1} id={"1"} className={active === "1" ? "active toggle" : "toggle"}
                         onClick={e => {
                             setActive(e.target.id);
                             e.preventDefault();
                             setFormToggle(true);
                             console.log("on")
                         }}>Zip Code</button>
-                    <button key={2} id={"2"} className={active === "2" ? "active" : undefined}
+                    <button key={2} id={"2"} className={active === "2" ? "active toggle" : "toggle"}
                         onClick={e => {
                             setActive(e.target.id);
                             e.preventDefault();
                             setFormToggle(false);
                             console.log("off")
                         }}> Coordinates</button>
-                    <form 
+                    <form
                         onSubmit={e => {
                             e.preventDefault();
                             fetchWeather();
                             dispatch(loadWeather(lat, long));
-                    }}>
+                        }}>
                         {formToggle ?
-                            <div>
-                                <heading className="form-title">Enter your coordinates here!</heading>
-                                <div class="mb-3">
-                                    <label>Zip Code:</label><br></br>
-                                    <input type="text" value={zip}
-                                        onChange={e => setZip(e.target.value)} />
-                                </div>
-                            </div> : <div>
-                                <div class="mb-3">
-                                    <label>Latitude:</label><br></br>
-                                    <input type="text" value={lat}
-                                        onChange={e => setLat(e.target.value)} />
-                                </div>
-                                <div class="mb-3">
-                                    <label>Longitude:</label><br></br>
-                                    <input type="text" value={long}
-                                        onChange={e => setLong(e.target.value)} />
-                                </div>
+                            <div class="input-selection">
+                                <label>Zip Code:</label>
+                                <input class="col-6" type="text" placeholder="Zip code" value={zip}
+                                    onChange={e => setZip(e.target.value)} />
+                            </div>
+                            :
+                            <div class="input-selection">
+                                <label>Latitude:</label>
+                                <input class="col-6" type="text" placeholder="Latitude" value={lat}
+                                    onChange={e => setLat(e.target.value)} />
+
+                                <label>Longitude:</label>
+                                <input class="col-6" type="text" placeholder="Longitude" value={long}
+                                    onChange={e => setLong(e.target.value)} />
                             </div>}
                         <button>
                             Submit

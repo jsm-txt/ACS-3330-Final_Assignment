@@ -1,7 +1,7 @@
 function CallToAction() {
     return(
-        <div className="call-to-action-container container-fluid col-6 p-4">
-            <div className="call-to-action col-12">
+        <div className="call-to-action-container container-fluid col-md-6 col-sm-10 ">
+            <div className="call-to-action col-12 p-3">
                 <h1 className="call-to-action-heading">
                     Get all your weather data here!
                 </h1>
